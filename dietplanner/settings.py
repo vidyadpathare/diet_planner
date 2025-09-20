@@ -3,7 +3,7 @@ import os
 import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+# DATABASE_URL="postgresql://vidya:4p8JeckRzpgDzGeGkkqUXpl19DuU29tD@dpg-d373vunfte5s73athg7g-a/dietplanner"
 # SECURITY WARNING: keep the secret key secret in production!
 SECRET_KEY = os.getenv(
     "SECRET_KEY",
@@ -15,6 +15,7 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 
 # Hosts
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")  # e.g., "yourdomain.com,www.yourdomain.com"
+ALLOWED_HOSTS = ["https://diet-planner-9ha0.onrender.com"]
 
 # Static files
 STATIC_URL = '/static/'
