@@ -1,1 +1,1 @@
-web: gunicorn dietplanner.wsgi:application --log-file –
+web: gunicorn dietplanner.wsgi:application --workers 2 --log-file -
