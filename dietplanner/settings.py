@@ -5,7 +5,7 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key secret in production!
-SECRET_KEY = os.getenv("SECRET_KEY", "replace-this-key-for-dev-only")
+SECRET_KEY = os.getenv("SECRET_KEY", "4u6y5e2r%!5a$))ahlg@9=a4@e@yl22m*@_=lwsvtfk*-x_jx@")
 
 # Debug = False on Render, True locally
 DEBUG = os.getenv("DEBUG", "True") == "True"
